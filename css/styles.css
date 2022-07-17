@@ -1,0 +1,223 @@
+:root {
+  --title-text-color: #212121;
+  --text-color: #757575;
+  --accent-color: #2196f3;
+  --accent-color-secondary: #188ce8;
+  --black-color: #000000;
+  --white-color: #ffffff;
+  --footer-link-color: rgba(255, 255, 255, 0.6);
+  --secondary-background-color: #2f303a;
+  --third-background-color: #f5f4fa;
+}
+
+/* title text color #212121 */
+/* text color #757575 */
+/* accent color #2196F3 */
+/* black color #000000 */
+/* white color #FFFFFF */
+/* footer link color rgba(255, 255, 255, 0.6) */
+/* secondary background color #2F303A */
+/*  */
+/* third background color #F5F4FA */
+
+/* Reset style */
+
+.list {
+  list-style: none;
+  text-decoration: none;
+}
+.hero-button,
+.button {
+  cursor: pointer;
+}
+
+/* Page */
+
+.page {
+  background-color: var(--white-color);
+  color: var(--text-color);
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  letter-spacing: 0.03em;
+}
+
+/* Header */
+
+.header-logo {
+  color: var(--black-color);
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+}
+.header-logo span {
+  color: var(--accent-color);
+}
+
+/* Site-nav */
+
+.site-nav-link {
+  color: var(--title-text-color);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+.site-nav-link:hover,
+.site-nav-link:focus {
+  color: var(--accent-color);
+}
+
+/* Auth-list link */
+
+.auth-link {
+  color: var(--text-color);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+.auth-link:hover,
+.auth-link:focus {
+  color: var(--accent-color);
+}
+
+/* Hero */
+
+.hero {
+  background-color: var(--secondary-background-color);
+}
+
+.hero-title {
+  color: var(--white-color);
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+.hero-button {
+  color: var(--white-color);
+  background-color: var(--accent-color);
+  font-family: inherit;
+  font-weight: 700;
+  font-size: inherit;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+}
+.hero-button:hover,
+.hero-button:focus {
+  background-color: var(--accent-color-secondary);
+}
+
+/* Section General*/
+
+.section-title {
+  color: var(--title-text-color);
+}
+
+/* Section Features */
+
+.features .section-title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+}
+.features-text {
+  font-size: 14px;
+  line-height: 1.71;
+}
+
+/* Section Job*/
+
+.job .section-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+}
+
+/* Section Team */
+
+.section.team {
+  background-color: var(--third-background-color);
+}
+.team-item > .section-title,
+.team-item > .section-text {
+  line-height: 1.19;
+  text-align: center;
+}
+
+.team-item > .section-title {
+  font-size: 16px;
+  font-weight: 500;
+}
+.section > .section-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+}
+
+/* Footer */
+
+.footer {
+  background-color: var(--secondary-background-color);
+}
+.footer-logo {
+  color: var(--white-color);
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+}
+
+.footer-logo span {
+  color: var(--accent-color);
+}
+
+.footer-text {
+  color: var(--white-color);
+}
+.footer-link {
+  color: var(--footer-link-color);
+}
+.footer-link,
+.footer-text {
+  font-size: 14px;
+  line-height: 1.71;
+}
+.footer-address {
+  font-style: normal;
+}
+
+/* Portfolio */
+
+.button {
+  color: var(--title-text-color);
+  background-color: var(--third-background-color);
+  font-family: inherit;
+  font-weight: 500;
+  font-size: inherit;
+  line-height: 1.62;
+  text-align: center;
+  letter-spacing: inherit;
+}
+.button:hover,
+.button:focus {
+  background-color: var(--accent-color);
+}
+
+/* Benefits */
+
+.benefits-list .section-title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+.benefits-list .benefits-text {
+  line-height: 1.88;
+}
