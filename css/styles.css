@@ -8,8 +8,11 @@
   --footer-link-color: rgba(255, 255, 255, 0.6);
   --secondary-background-color: #2f303a;
   --third-background-color: #f5f4fa;
+  --indent: 30px;
+  --items: 3;
 }
 
+/* flex-basis: calc((100% - var(--indent) * (var(--items) - 1)) / var(--items)); */
 /* title text color #212121 */
 /* text color #757575 */
 /* accent color #2196F3 */
@@ -56,8 +59,8 @@ img {
   margin-left: auto;
   margin-right: auto;
 
-  outline: 2px solid tomato;
-  outline-offset: -2px;
+  /* outline: 2px solid tomato;
+  outline-offset: -2px; */
 }
 
 /* Page */
@@ -248,11 +251,11 @@ img {
 .job-list {
   display: flex;
   flex-wrap: wrap;
-  gap: 30px;
+  gap: var(--indent);
 }
 
 .job-item {
-  flex-basis: calc((100%-30px * 2) / 3);
+  flex-basis: calc((100% - var(--indent) * (var(--items) - 1)) / var(--items));
 }
 
 .job .section-title {
@@ -273,17 +276,15 @@ img {
 .team-list {
   display: flex;
   flex-wrap: wrap;
-  /* gap: 30px;   */
+  gap: var(--indent);
+  --items: 4;
 }
 
 .team-item {
+  flex-basis: calc((100% - var(--indent) * (var(--items) - 1)) / var(--items));
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
-}
-
-.team-item:not(:last-child) {
-  margin-right: 30px;
 }
 
 .team-wrapper {
@@ -373,7 +374,25 @@ img {
 
 /* Portfolio */
 
+.portfolio > .section-title {
+  display: none;
+}
+
+.button-list {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-bottom: 50px;
+}
+
 .button {
+  min-width: 73px;
+  padding: 6px 22px;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
+  border-color: var(--third-background-color);
+
   color: var(--title-text-color);
   background-color: var(--third-background-color);
   font-family: inherit;
@@ -383,12 +402,39 @@ img {
   text-align: center;
   letter-spacing: inherit;
 }
+
+.button:not(:last-child) {
+  display: inline-block;
+  margin-right: 8px;
+}
+
 .button:hover,
 .button:focus {
   background-color: var(--accent-color);
+  border-color: var(--accent-color);
 }
 
 /* Benefits */
+
+.benefits-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--indent);
+  --items: 9;
+}
+
+.benefits-wrapper {
+  padding-left: 24px;
+  padding-right: 24px;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  background: #ffffff;
+  border: 1px solid #eeeeee;
+  border-top: none;
+}
+
+.benefits-item {
+}
 
 .benefits-list .section-title {
   font-weight: 700;
